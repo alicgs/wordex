@@ -1,0 +1,78 @@
+//Navbar Başlangıcı
+.navbar
+{
+    border-bottom: 3px solid #fff;
+    .hkk-container
+    {
+        .search-form
+        {
+            border-radius: 2rem;
+            position: relative;
+            background: linear-gradient( rgba(253,116,155,100%), rgba(40,26,200,100%));
+            padding: 2px;
+            .hkk-input-group
+            {
+                background: #1E0338;
+                border-radius: 2rem;
+                .input-group-text
+                {
+                    background-color: transparent
+                }
+                .hkk-form-control
+                {
+                    width: 300px;
+                    background-color: transparent;
+                    color:#fff;
+                    &:focus
+                    {
+                        border-color: none;
+                        box-shadow: none;
+                    }
+                }
+                
+            }
+        }
+        .navbar-nav 
+        {
+            .nav-item 
+            {
+                .hkk-bell
+                {
+                    padding: .4rem 0;
+                }
+                .hkk-dropdown-menu
+                {
+                    position: absolute;
+                    --bs-dropdown-min-width : 1rem;
+                    background-color: #1E0338;
+                    border: 1px solid #fff;
+                    .dropdown-item
+                    {
+                        .select-lang-img
+                        {
+                            width: 25px;
+                            border-radius: 50%;
+                        }
+                        &:hover
+                        {
+                            background: linear-gradient(#FD749B,#281AC8);
+                        }
+                    }
+                }
+            }
+            .hkk-dropdown
+            {
+                .hkk-lang-link
+                {
+                    padding: 0 .5rem;
+                    .lang-img
+                    {
+                        width: 25px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+//Navbar Bitişi

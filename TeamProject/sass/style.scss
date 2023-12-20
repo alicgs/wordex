@@ -1,0 +1,25 @@
+@use "./base";
+@use "./layout";
+@use "./components";
+@use "./abstracts";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    body
+    {
+        background-color: #1E0338;
+    }
+}
+.main-content
+{
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}

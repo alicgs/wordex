@@ -1,0 +1,213 @@
+.sidebar
+{
+    position: fixed;
+    top: 72px;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #1E0338;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+    z-index: 1;
+    border-right: 3px solid #fff;
+    .top
+    {
+        .logo
+        {
+            color: #fff;
+            display: flex;
+            height: 50px;
+            width: 100%;
+            align-items: center;
+            opacity: 0;
+            padding-left: 1rem;
+        }
+        #btn
+        {
+            position: absolute;
+            color: #fff;
+            top: .4rem;
+            left: 50%;
+            font-size: 1.2rem;
+            line-height: 50px;
+            transform: translateX(-50%);
+        }
+    }
+    .user
+    {
+        .user-img
+        {
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+        }
+        .user-name
+        {
+           .hkk-username
+           {
+            color: #fff;
+            margin: 0 0 0 1rem;
+            display: none;
+           }
+        }
+    }
+    & ~ .main-content .hkk-section
+    {
+        color: #fff;
+        position: relative;
+        left: 80px;
+        transition: all 0.5s ease;
+        width: calc(100% - 80px);
+    }
+    .hkk-sidebar-ul
+    {
+        padding-left: 0;
+        .hkk-sidebar-li
+        {
+            position: relative;
+            list-style-type: none ;
+            height: 50px;
+            width: 90%;
+            margin: 3.3rem 0;
+            line-height: 50px;
+            font-size: 1.25rem;
+            &:hover
+            {
+                .tool-tip
+                {
+                    display: block;
+                    background-color: #1e0338;
+                    color: #fff
+                }
+            }
+            &:nth-child(2) .tool-tip
+            {
+                width: 500px;
+                border: 3px solid #fff;
+            }
+            .tool-tip
+            {
+                position: absolute;
+                left: 75px;
+                top: 10%;
+                border-radius: .6rem;
+                padding: .4rem 1.2rem;
+                line-height: 1.8rem;
+                z-index: 20;
+                display: none;
+                background-color: #1e0338;
+                color: #fff;
+            }
+            .hkk-sidebar-item
+            {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                border-radius: .8rem;
+                &:hover
+                {
+                    background-image: linear-gradient(to bottom left,rgba(253,118,116),rgba(40,26,200));
+                }
+                .hkk-icon
+                {
+                    min-width: 50px;
+                    text-align: center;
+                    height: 50px;
+                    border-radius: .8rem;
+                    line-height: 50px;
+                }
+                .sideselection-nav-item
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.sidebar.active 
+{
+    width: 250px;
+    padding: 0.4rem 0.8rem 0.4rem 0;
+    .hkk-sidebar-ul
+    {
+        .hkk-sidebar-li
+        {
+            .hkk-sidebar-item
+            {
+                border-radius: 0 2rem 2rem 0;
+                .sideselection-nav-item
+                {
+                    display: block;
+                }
+            }
+            .tool-tip
+            {
+                display: none;
+            }
+        }
+    }
+    .user
+    {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        .user-name
+        {
+            .hkk-username
+            {
+                display: block;
+            }
+        }
+    }
+    .top
+    {
+        #btn
+        {
+            left: 90%;
+        }
+        .logo
+        {
+            opacity: 1;
+        }
+    }
+    
+    & ~ .main-content 
+    {
+        .hkk-section
+        {
+        color: #fff;
+        position: relative;
+        left: 250px;
+        transition: all 0.5s ease;
+        width: calc(100% - 250px)
+        }
+    }
+}
+::placeholder 
+{
+    color: #fff !important;
+    opacity: .4 !important; /* Firefox */
+}
+::-ms-input-placeholder { /* Edge 12-18 */
+    color: #fff !important;
+    opacity: .4 !important;
+}
+@keyframes myAnimation {
+    100%
+    {
+      stroke-dashoffset: 150;
+    }
+  } 
+  @keyframes myAnimation2 {
+    100%
+    {
+      stroke-dashoffset: 210;
+    }
+  } 
+  @keyframes myAnimation3 {
+    100%
+    {
+      stroke-dashoffset: 80;
+    }
+  } 

@@ -1,0 +1,130 @@
+ //Ana Kısmı Başlangıcı
+ .hkk-area
+ {
+     
+     .hkk-section-container
+     {
+         margin-left: 5rem;margin-right: 5rem;
+         .hkk-mr-right
+         {
+             margin-right: 6.5rem;
+         }
+         .hkk-mr-left
+         {
+             margin-left: 6.5rem;
+         }
+         .hkk-main
+         {
+             border: 3px solid #fff;
+             border-radius: 20px;
+             .hkk-game-graphic
+             {
+                 .hkk-graphic
+                 {
+                     .hkk-graphic-baslik
+                     {
+                         color:#1CD1A1;
+                     }
+                 }
+             }
+             .hkk-dropstart
+             {
+                 .hkk-dropdown-menu
+                 {
+                     .hkk-dropdown-item
+                     {
+                         &:hover
+                         {
+                             background: linear-gradient(#FD749B,#281AC8);
+                             color: #fff;
+                         }
+                     }
+                 }
+             }
+             .hkk-circle
+             {
+                 .svg1
+                 {
+                     position: absolute;
+                     top: 14.3rem;
+                     transform: rotate(-90deg);
+                     circle
+                     {
+                         fill: none;
+                         stroke:url(#gradientColor);
+                         stroke-width: 20px;
+                         stroke-dasharray: 440;
+                         stroke-dashoffset: 440; 
+                         animation: myAnimation2 2s linear forwards;
+                     }
+                 }
+                 .svg2
+                 {
+                     position: absolute;
+                     top: 14.3rem;
+                     transform: rotate(-90deg);
+                     circle
+                     {
+                         fill: none;
+                         stroke:url(#gradientColor);
+                         stroke-width: 20px;
+                         stroke-dasharray: 440;
+                         stroke-dashoffset: 440; 
+                         animation: myAnimation 2s linear forwards;
+                     }
+                 }
+                 .svg3
+                 {
+                     position: absolute;
+                     top: 14.3rem;
+                     transform: rotate(-90deg);
+                     circle
+                     {
+                         fill: none;
+                         stroke:url(#gradientColor);
+                         stroke-width: 20px;
+                         stroke-dasharray: 440;
+                         stroke-dashoffset: 440; 
+                         animation: myAnimation3 2s linear forwards;
+                     }
+                 }
+                 .outermost
+                 {
+                     width:160px; height:160px; position: relative;
+                     .outer
+                     {
+                         width: 160px;
+                         height: 160px;
+                         border-radius:50%;
+                         padding: 20px;
+                         box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.15),
+                         -1px -1px 6px -1px rgba(255, 255, 255, 0.7);
+                         background-color: #D9D9D9;
+                         .inner
+                         {
+                             width: 120px;
+                             height: 120px;
+                             border-radius:50%;
+                             box-shadow: inset 2px 2px 6px -1px rgba(0, 0, 0, 0.2),
+                             inset -2px -2px 6px -1px rgba(255, 255, 255, 0.7),
+                             -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                             0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                             0px 12px 10px -12px rgba(0, 0, 0, 0.05);
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             background-color: #1E0338;
+                             .input-number
+                             {
+                                 background: linear-gradient(#FC58B3,#FEAE68);
+                                 background-clip: text;
+                                 -webkit-text-fill-color: transparent;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+ //Ana Kısım Bitişi
